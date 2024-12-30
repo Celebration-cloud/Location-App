@@ -1,13 +1,15 @@
 {
   "expo": {
     "name": "My Location App",
-    "slug": "Location-App",
+    "slug": "my-location-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/location_Icon.jpeg",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
-    "platforms": ["android"],
+    "platforms": [
+      "android"
+    ],
     "newArchEnabled": true,
     "android": {
       "package": "com.celebration.locationapp",
@@ -16,7 +18,10 @@
         "foregroundImage": "./assets/images/location_Icon.jpeg",
         "backgroundColor": "#ffffff"
       },
-      "permissions": ["CAMERA", "LOCATION"],
+      "permissions": [
+        "CAMERA",
+        "LOCATION"
+      ],
       "config": {
         "googleMaps": {
           "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
@@ -35,7 +40,10 @@
             "host": "*.yourcompany.com",
             "pathPrefix": "/"
           },
-          "category": ["BROWSABLE", "DEFAULT"]
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
         }
       ]
     },
@@ -54,6 +62,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "bc82867e-0481-4ff1-92b2-d7987e4727d7"
+      }
+    },
+    "owner": "celebration"
   }
 }
