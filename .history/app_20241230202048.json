@@ -12,9 +12,8 @@
     ],
     "newArchEnabled": true,
     "android": {
-      
       "package": "com.celebration.locationapp",
-      "versionCode": 1,
+      "versionCode": ,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/location_Icon.jpeg",
         "backgroundColor": "#ffffff"
@@ -33,7 +32,6 @@
         "resizeMode": "contain",
         "backgroundColor": "#0a7ea4"
       },
-      
       "intentFilters": [
         {
           "action": "VIEW",
