@@ -1,0 +1,18 @@
+import React from 'react'
+import { useLocalSearchParams, Stack} from 'expo-router';
+import { StyleSheet, Text, View } from 'react-native'
+const DetailScreen = () => {
+  const {data, title} = useLocalSearchParams()
+  const itemTitle = JSON.parse(title)
+  const itemData = JSON.parse(data)
+  return (
+    <View>
+      <Stack.Screen options={{title: itemTitle }}/>
+      <Text>DetailScreen</Text>
+    </View>
+  )
+}
+
+export default DetailScreen
+
+const styles = StyleSheet.create({})
